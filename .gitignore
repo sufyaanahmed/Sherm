@@ -1,0 +1,24 @@
+# Node.js dependencies
+node_modules/
+
+# Logs
+logs
+*.log
+
+# dotenv environment variables file
+.env
+
+# Build files
+dist/
+build/
+
+# OS or editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# Other cache or temporary files
+*.cache
+*.tmp
