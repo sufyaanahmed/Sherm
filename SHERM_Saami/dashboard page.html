@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Medical Health Records Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-zoom@1.0.1/dist/chartjs-plugin-zoom.min.js"></script>
+    <script src="dashboard.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Interactive Medical Health Records Dashboard</h1>
+
+        <!-- Filters -->
+        <div class="filters">
+            <label for="timePeriod">Select Time Period:</label>
+            <select id="timePeriod">
+                <option value="weekly">Weekly</option>
+                <option value="monthly">Monthly</option>
+                <option value="yearly">Yearly</option>
+            </select>
+            
+            <label for="departmentFilter">Select Department:</label>
+            <select id="departmentFilter">
+                <option value="all">All Departments</option>
+                <option value="cardiology">Cardiology</option>
+                <option value="neurology">Neurology</option>
+                <option value="oncology">Oncology</option>
+            </select>
+        </div>
+
+        <!-- Charts -->
+        <div class="chart-container">
+            <canvas id="patientAdmissionsChart" width="400" height="200"></canvas>
+            <canvas id="treatmentOutcomesChart" width="400" height="200"></canvas>
+            <canvas id="monthlyAdmissionsChart" width="400" height="200"></canvas>
+        </div>
+    </div>
+</body>
+</html>
